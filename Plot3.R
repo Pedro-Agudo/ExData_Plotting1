@@ -89,7 +89,7 @@ rm(data_raw)
 
 #Plot 3
 
-
+par(mfrow=c(1,1))
 with(epc, plot(datetime, Sub_metering_1, 
                type="n",
                xlab="",
@@ -105,12 +105,17 @@ legend_names<-c("Sub_metering_1",
                 "Sub_metering_3")
 
 legend("topright", 
-       legend=legend_names,
+       legend=legend_names       ,
        col=c("black","red","blue"),
        lty=1,
+       cex=0.6,
+       xjust=0,
+       y.intersp=1,
        text.width = strwidth(legend_names[1])
        
+       
 )
+
 dev.copy(png, "Plot3.png", height = 480, width = 480)
 dev.off()
 
