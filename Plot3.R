@@ -108,7 +108,7 @@ legend("topright",
        legend=legend_names       ,
        col=c("black","red","blue"),
        lty=1,
-       cex=0.6,
+       cex=0.8,
        xjust=0,
        y.intersp=1,
        text.width = strwidth(legend_names[1])
